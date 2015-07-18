@@ -13,3 +13,6 @@ Any extra files that your lua script requires should be placed in the 'Includes'
 
 ##Examples
 Hopefully I have documented each script well enough that you should be able to follow and use them as a starting point for your own scripts.
+
+##Language
+The scripts are written in Lua. Heres a good starting place if you are just starting to learn to code in lua: http://www.lua.org/pil/contents.html
