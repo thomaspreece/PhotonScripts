@@ -12,4 +12,4 @@ Your script should ideally be named the same as the site that the data is scrape
 Any extra files that your lua script requires should be placed in the 'Includes' folder and NOT in the same folder as the main script (as then that other file will show up in Photon's interface).
 
 ##Examples
-There is an example script in the 'Game' folder but you should be able to follow any of the scripts in the other folder so just use them as a starting point
+Hopefully I have documented each script well enough that you should be able to follow and use them as a starting point for your own scripts.

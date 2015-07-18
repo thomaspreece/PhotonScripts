@@ -294,7 +294,7 @@ function SearchGame(SearchText,PreviousClientData,Platform,ListDepth,Internet,Li
 	wordList = {}
 	gameList = {}
 	for word in SearchText:gmatch("%w+") do 
-		wordList[word] = true 
+		wordList[word:lower()] = true 
 	end
 	
 	ListDepth = tonumber(ListDepth)
@@ -336,13 +336,13 @@ function SearchGame(SearchText,PreviousClientData,Platform,ListDepth,Internet,Li
 		
 		for k,v in pairs(gameList) do
 			for word in v[1]:gmatch("%w+") do
-				if wordList[word] == true then 
+				if wordList[word:lower()] == true then 
 					v[3] = v[3] + 1
 				else
 					v[4] = v[4] + 1
 				end 
 			end 
-			v[5] = lcs(v[1],SearchText)
+			v[5] = lcs(v[1]:lower(),SearchText:lower())
 		end 
 		
 		table.sort(gameList, SearchGameCompare)
